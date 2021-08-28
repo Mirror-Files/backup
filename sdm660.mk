@@ -400,7 +400,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(COMMON_PATH)/overlay
+    $(COMMON_PATH)/overlay \
+    $(COMMON_PATH)/overlay-xd
 
 # RRO configuration
 TARGET_USES_RRO := true
