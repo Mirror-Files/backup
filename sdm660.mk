@@ -151,10 +151,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0-service
 
-# ATRACE_HAL
-PRODUCT_PACKAGES += \
-    android.hardware.atrace@1.0-service
-
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660
@@ -307,23 +303,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(COMMON_PATH)/configs/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
 
-# IFAAService
-PRODUCT_PACKAGES += \
-    IFAAService \
-    org.ifaa.android.manager
-
-# IFAA JAR
-PRODUCT_BOOT_JARS += \
-    org.ifaa.android.manager
-
 # IMS
 PRODUCT_PACKAGES += \
-    ims-ext-common_system \
+    ims-ext-common \
     ims_ext_common.xml \
-
-# IMS JAR
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system
 
 # Init
 PRODUCT_PACKAGES += \
@@ -657,14 +640,10 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
-# WiFi Display JAR
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 # DeviceSettings
 PRODUCT_PACKAGES += \
    DeviceSettings
-   
+ 
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 USE_DEVICE_SPECIFIC_IPACFG_MGR := true
