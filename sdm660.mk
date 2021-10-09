@@ -671,10 +671,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
-
-# DeviceSettings
-PRODUCT_PACKAGES += \
-   DeviceSettings
  
 # IPA
 USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
